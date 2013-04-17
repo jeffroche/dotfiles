@@ -1,5 +1,5 @@
 [user]
-	name = jeffroche
+	name = Jeff Roche
 	email = jeff.roche@gmail.com
 [core]
 	excludesfile = ~/.gitignore_global
@@ -12,7 +12,7 @@
 	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
 	type = cat-file -t
 	dump = cat-file -p
-    
+
 [color]
     status = auto
     branch = auto
