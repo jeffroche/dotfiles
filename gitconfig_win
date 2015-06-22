@@ -2,13 +2,13 @@
 	name = Jeff Roche
 	email = jeff.roche@gmail.com
 [core]
-	autocrlf = true
-	editor = vim
 	excludesfile = ~/.gitignore_global
+	editor = vim
 [alias]
 	co = checkout
 	ci = commit
 	st = status
+	s = status
 	br = branch
 	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
 	type = cat-file -t
@@ -16,12 +16,6 @@
 	vim = '/c/Program Files/Vim/vim73/vim.exe'
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 [diff]
-	tool = p4merge
-[difftool "p4merge"]
-	cmd = "p4merge.exe $LOCAL $REMOTE"
-[merge]
-	tool = p4merge
-[mergetool "p4merge"]
-	cmd = "p4merge.exe $BASE $LOCAL $REMOTE $MERGED"
-	trustExitCode = true
-	keepBackup = false
+	tool = meld
+[difftool "meld"]
+	cmd = '/c/Program Files (x86)/Meld/Meld.exe' $LOCAL $REMOTE
